@@ -1,16 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import * as ReactBootStrap from "react-bootstrap";
 // import {feedback} from './image/feedback.png'
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import { fab } from '@fortawesome/free-brands-svg-icons';
+// import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
 
-library.add(fab, faCheckSquare, faCoffee)
+// library.add(fab, faCheckSquare, faCoffee)
 function ComponentsList(){
   return (
     <div>
+      <Nv />
       <Compo />
       <Comp1 /> 
       <Slide1/>
@@ -21,7 +24,29 @@ function ComponentsList(){
     </div> 
   );
 }
+const Nv = () =>{
+  return(
+    <div className="nvbar">
+    <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <ReactBootStrap.Navbar.Brand href="#home">Patch Management</ReactBootStrap.Navbar.Brand>
+    <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
+    <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
+      <ReactBootStrap.Nav className="mr-auto">
+        <ReactBootStrap.Nav.Link href="#features">Home</ReactBootStrap.Nav.Link>
+      </ReactBootStrap.Nav>
+      <ReactBootStrap.Nav>
+        <ReactBootStrap.Nav.Link href="#pricing">About us</ReactBootStrap.Nav.Link>
+        <ReactBootStrap.Nav.Link href="#deets">Projects</ReactBootStrap.Nav.Link>
+        <ReactBootStrap.Nav.Link eventKey={2} href="#memes">Contact</ReactBootStrap.Nav.Link>
+      </ReactBootStrap.Nav>
+    </ReactBootStrap.Navbar.Collapse>
+</ReactBootStrap.Navbar>
+  </div>
 
+  );
+  
+  
+}
 const Compo = () =>{
   return (
     <div className="intro" id="#wStart1">
