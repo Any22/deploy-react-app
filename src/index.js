@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import * as ReactBootStrap from "react-bootstrap";
+import {FaYoutubeSquare} from "react-icons/fa";
+import {FaInstagramSquare} from "react-icons/fa";
+import {FaFacebookSquare} from "react-icons/fa";
+import {FaGithubSquare} from "react-icons/fa";
+import {FaTwitterSquare} from "react-icons/fa";
+
 // import {feedback} from './image/feedback.png'
 
-// import { library } from '@fortawesome/fontawesome-svg-core';
-// import { fab } from '@fortawesome/free-brands-svg-icons';
-// import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
 
-// library.add(fab, faCheckSquare, faCoffee)
 function ComponentsList(){
   return (
     <div>
@@ -144,7 +146,11 @@ const Comp5 = () =>{
       <footer>
         <div className="main-footer-content">
           <div className="social_link" id="contact_icon">
-            <a  className='icon' href ="https://www.facebook.com"><i className="fa fa-facebook"></i></a> 
+            <a  className='icon' href ="https://www.twitter.com"><span><FaTwitterSquare  color='#00acee'/></span></a>
+            <a  className='icon' href ="https://www.youtube.com"><span><FaYoutubeSquare  color='#FF0000'/></span></a>
+            <a  className='icon' href ="https://www.facebook.com"><span><FaFacebookSquare color='#3b5998'/></span></a> 
+            <a  className='icon' href ="https://github.com/Any22/"><span><FaGithubSquare  color='black'/></span></a> 
+            <a  className='icon' href ="https://www.instagram.com"><span><FaInstagramSquare  color='#3f729b'/></span></a>
           </div>
           <br/>
         <div className="copyRight">

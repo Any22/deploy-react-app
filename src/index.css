@@ -236,8 +236,150 @@ html {
   width: 50%;
   border-radius: 20%;
 }
+@media only screen and (min-width: 200px) and (max-width: 540px) {
+  h3 {
+    font-size: 0.5em;
+  }
+  .container-nav ul li a {
+    font-size: 0.55em;
+    color: black;
+    padding: 2px 10px;
+  }
+  .intro h1 {
+    position: relative;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #393939;
+  }
+  .intro h3 {
+    position: relative;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: normal;
+    /* z-index: 6; */
+  }
 
-.footer-section footer {
+  .slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    position: relative;
+    margin: auto;
+  }
+  .mySlides img {
+    width: 290px;
+    height: 250px;
+  }
+  .prev {
+    right: 280px;
+
+    border-radius: 3px 0 0 3px;
+  }
+  .dot {
+    display: inline;
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+    background-color: #bbb;
+    transition: background-color 0.6s ease;
+  }
+
+  .dot:hover {
+    background-color: #717171;
+  }
+  .intropic {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* color:#3cba54; */
+    /* color:#fb7e84; */
+    width: 100vw;
+    height: auto;
+    /* background-color:#2b2b2b;  */
+    /* color:#fb7e84; */
+    /* border: red soild 3px; */
+  }
+
+  .contentClass {
+    /* keeping height and width auto so the content can be adjusted itself when differnt screens are used  */
+    height: auto;
+    width: auto;
+    /* border:red solid 3px; */
+    /* padding:20px; */
+  }
+  .contentClass ul {
+    position: relative;
+    /* text-align: justify;  */
+    font-size: 1em;
+    font-weight: normal;
+  }
+  .imgCont .imAge {
+    position: relative;
+    left: -20px;
+    width: 240px;
+    height: 80px;
+  }
+
+  .intropic1 {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
+    /* background-color:#2b2b2b;  */
+    /* color:#fb7e84; */
+    border-top: rgb(218, 218, 218) solid 1px;
+    border-bottom: rgb(218, 218, 218) solid 1px;
+  }
+  .imgCont1 .imAge1 {
+    position: relative;
+    right: 30px;
+    width: 240px;
+    height: 150px;
+  }
+
+  .contentClass1 {
+    /* keeping height and width auto so the content can be adjusted itself when differnt screens are used  */
+    height: auto;
+    width: auto;
+    /* border:red solid 3px; */
+    /* padding:20px; */
+  }
+  .contentClass1 h2 {
+    position: relative;
+    left: 30px;
+    font-weight: normal;
+  }
+  .contentClass1 p {
+    position: relative;
+    left: 10px;
+    top: 10px;
+    font-weight: normal;
+  }
+  .feedback {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: rgb(218, 218, 218) solid 1px;
+  }
+
+  .feedback .imAge2 {
+    width: 130%;
+    height: 130%;
+  }
+}
+footer {
   position: relative;
   bottom: 0px;
   width: 100%;
@@ -250,24 +392,26 @@ html {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 24px;
+  align-items: center;
+  font-size: 1.75rem;
 }
 /*  creating space between social icons  */
-/* .social_link a span {
+.social_link a span {
   margin-top: 20px;
   height: 20px;
   width: 60px;
+  padding-left: 20px;
   color: white;
-} */
-.social_link .icon {
-  color: red;
 }
+
 /* size is changing here for copy right note */
 .copyRight {
+  text-align: center;
   font-size: 14px;
 }
 /* color is changing here for copy right text*/
 .copyRight span {
+  text-align: center;
   color: #50575e;
   font-weight: lighter;
 }
