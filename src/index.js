@@ -22,6 +22,7 @@ function ComponentsList(){
       <Comp2 />
       <Comp3 />
       <Comp4 />
+      <Project />
       <Comp5 />
     </div> 
   );
@@ -51,7 +52,8 @@ const Nv = () =>{
 }
 const Compo = () =>{
   return (
-    <div className="intro" id="#wStart1">
+    <div className="intro" id="#wStart1" style={{backgroundImage:"url(image/business2.jpeg)"}}>
+        
         <h1>Reduce Your Business Risks</h1>
         <h3>Industry Experts in Patch and Vulnerability Management</h3>
         <button type="button" id="button1" className="button"><a href="contact.html"><span>Book a demo</span></a>
@@ -78,17 +80,21 @@ const Slide1= () =>{
 
       <div className="mySlides">
        <div className="numbertext"></div>
-       <img src='https://www.thepcdoctor.com.au/wp-content/uploads/2019/04/why-choose-us.jpg' alt='choose_us'/>
+       <img src='image/choose.jpg' alt='choose_us'/>
       </div>
 
       <div className="mySlides">
         <div className="numbertext"></div>
-          <img src='https://lh3.googleusercontent.com/1L9CQRs92Gvd3ZVuV4bwS9JW7FVBIoySxRlz2x03DxmIr3hctJYmVFu5732S6B29Yib9Uw=s170' alt='bpractice'/>
+          <img src='image/Best_pratice.jpg' alt='bpractice'/>
       </div>
           
        <div className="mySlides">
          <div className="numbertext"></div>
-       <img src='https://lh3.googleusercontent.com/kP6eiOtMLmBDOCzbov3ZXcq3KxN5ZCSYNKcvt0tYaB5eXDEx1ZdC3lo7vrjM83lDLuSbDQ=s86' alt='cycle'/>
+       <img src='image/feed.png' alt='cycle'/>
+       </div>
+        <div className="mySlides">
+         <div className="numbertext"></div>
+       <img src='image/customers.png' alt='cycle'/>
        </div>
 
     </div>
@@ -108,10 +114,11 @@ return (
            <li>Flexible patching and vulnerability management solutions.</li>
            <li>Complete visibility</li>
          </ul>
-         <div className= "imgCont">
-           <img className="imAge" src='https://truedigitalsecurity.com/assets/images/content/Vulnerability_Cycle_01.png' alt="" />
          </div>
-      </div>  
+         <div className= "imgCont">
+           <img className="imAge" src='image/service3.png' alt="" height="240" width="500"  />
+         </div>
+    
   </div>    
 );
 }
@@ -120,7 +127,7 @@ const Comp3 = () =>{
   return (
     <div className="intropic1" id="introNpic1" >
       <div className= "imgCont1">
-        <img className="imAge1" src='https://www.manageengine.com/patch-management/images/pmp-banner-images-1.png' alt="" height="240" width="500" />   
+        <img className="imAge1" src='/image/service2.png' alt="" height="240" width="500" />   
       </div> 
       <div className="contentClass1">
         <h2>Choose us</h2>
@@ -135,9 +142,60 @@ const Comp4 = () =>{
   return (
     <div className="feedback">
       <h2>Customer Feedback</h2><br/>
-      <img className="imAge2" src='./images/business2.jpeg' alt="" height="240" width="500"/>    
+      <img className="imAge2" src='/image/feedback.png' alt="" height="240" width="500"/>    
     </div>
   );
+}
+
+const Project = () =>{
+  return (
+    <div class="proJect" id="proj">
+    <h2>Support</h2>
+    
+
+    <div class="cardcontainer">
+      <div class="card-deck">
+          <div class="card mb-4">
+           
+              <div class="card-body">
+                <h4 class="card-title">Request Support</h4>
+                <p class="card-text">We believe in continued maintenance and reporting. Contact adminitrative support using this online support request form</p>
+                <a href="contact.html" class="btn btn-primary"><span>Go</span></a>
+              </div>
+          </div>
+      
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title">Request Demo</h4>
+              <p class="card-text">Please don't just take our words.We also conduct a Q/A session to understand your requirements .In addition to this request a free personalized demo today</p>
+              <a href="#" class="btn btn-primary">Go</a>
+            </div> 
+        </div> 
+          <div class="w-100 d-none d-sm-block d-md-none"></div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title">Need features</h4>
+              <p class="card-text">Think you need a feature in Patch Manager service? Let us know</p>
+              <a href="#" class="btn btn-primary">Go</a>
+            </div>
+        </div>
+
+           <div class="w-100 d-none d-md-block d-lg-none"></div>
+           <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title">Get quotes</h4>
+              <p class="card-text">Get a personalized quote for your business needs</p>
+              <a href="contact.html" class="btn btn-primary">Go</a>
+            </div>
+        </div>
+        
+      </div>
+  </div>  
+  </div>
+    
+  );
+
+
 }
 
 const Comp5 = () =>{
