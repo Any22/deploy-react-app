@@ -18,12 +18,12 @@ function ComponentsList(){
       <Nv />
       <Compo />
       <Comp1 /> 
-      <Slide1/>
+      <Slider/>
       <Comp2 />
       <Comp3 />
-      <Comp4 />
+      <Feedback />
       <Project />
-      <Comp5 />
+      <Footer />
     </div> 
   );
 }
@@ -74,7 +74,7 @@ const Comp1 = () =>{
   );
 }
 
-const Slide1= () =>{
+const Slider= () =>{
   return(
     <div className="slideshow-container">
 
@@ -138,7 +138,7 @@ const Comp3 = () =>{
   );
 }
 
-const Comp4 = () =>{
+const Feedback = () =>{
   return (
     <div className="feedback">
       <h2>Customer Feedback</h2><br/>
@@ -198,7 +198,7 @@ const Project = () =>{
 
 }
 
-const Comp5 = () =>{
+const Footer = () =>{
   return (
     <div className="footer-section">
       <footer>
